@@ -1,6 +1,6 @@
 <html>
 <body>
-<h2>Enjoy Zero To Hero</h2>
+<h2>Hello World!</h2>
 
 <div>
     <form name="hello" method="post" action="hello">

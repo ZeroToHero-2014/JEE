@@ -15,7 +15,7 @@
     <title>Employee List</title>
 </head>
 <body>
-<%Employee employeeView = new EmployeeDao().getById(Long.valueOf(request.getParameter("id")));%>
+
 <table border="1">
     <thead>
     <tr>
@@ -35,31 +35,7 @@
 
     %>
     <tr>
-        <td>
-            <%=employeeView.getId()%>
-        </td>
-        <td>
-            <%=employeeView.getFirstName()%>
-        </td>
-        <td>
-            <%=employeeView.getLastName()%>
-        </td>
-        <td>
-            <%=employeeView.getSalary()%>
-        </td>
-        <td>
-            <%=employeeView.getEmail()%>
-        </td>
-        <td>
-            <%=sdf.format(employeeView.getHireDate())%>
-        </td>
-        <td>
-            <%=employeeView.getPhoneNumber()%>
-        </td>
-        <td>
-            <%=employeeView.getCommissionPoints()%>
-        </td>
-
+        <!--TODO de completat cu cod pentru a afisa detaliile angajatului cu id-ul trimis din employeelist.jsp in momentul in care se acceseaza link-ul 'View'-->
     </tr>
 
     </tbody>

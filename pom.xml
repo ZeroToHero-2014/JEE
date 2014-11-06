@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ro.teamnet.z2h.web</groupId>
-  <artifactId>web-container</artifactId>
+  <artifactId>z2h-jsp</artifactId>
   <packaging>war</packaging>
   <version>1.0</version>
   <name>web-container Maven Webapp</name>
@@ -20,6 +20,18 @@
           <version>3.0-alpha-1</version>
           <scope>provided</scope>
       </dependency>
+
+      <!--<dependency>
+          <groupId>com.oracle</groupId>
+          <artifactId>ojdbc6</artifactId>
+          <version>11.2.0</version>
+      </dependency>-->
+      <dependency>
+          <groupId>org.codehaus.jackson</groupId>
+          <artifactId>jackson-mapper-asl</artifactId>
+          <version>1.8.5</version>
+      </dependency>
+
   </dependencies>
   <build>
     <finalName>web-container</finalName>

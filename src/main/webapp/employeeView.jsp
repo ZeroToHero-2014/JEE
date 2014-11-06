@@ -64,6 +64,6 @@
 
     </tbody>
 </table>
-
+<a href="employeeList.jsp">Employee List</a>
 </body>
 </html>

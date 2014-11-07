@@ -17,16 +17,12 @@
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
         <description>HelloWorld Servlet</description>
-        <servlet-class>ro.teamnet.z2h.web.HelloWorldServlet</servlet-class>
+        <servlet-class>ro.teamnet.z2h.web.ZeroToHeroServlet</servlet-class>
     </servlet>
-
-
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
-
-
 
     <welcome-file-list>
         <welcome-file>/index.jsp</welcome-file>

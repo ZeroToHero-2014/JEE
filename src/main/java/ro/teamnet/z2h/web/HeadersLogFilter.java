@@ -14,6 +14,7 @@ import ro.teamnet.z2h.file.LogFileWriter;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
 import java.io.IOException;
 import java.util.Enumeration;
 
@@ -36,6 +37,12 @@ public class HeadersLogFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
        //TODO completeaza cu cod astfel incat sa poti loga headerele de pe request intr-un fisier.
        // Clasa care va scrie intr-un fisier de log este LogFileWriter metoda   logHeader
+        LogFileWriter lfw = new LogFileWriter();
+        Enumeration num = request.getParameterNames();
+        while(num.hasMoreElements()) {
+            String headerName = num.nextElement().toString();
+            lfw.logHeader(headerName, ((HttpServletRequest)request).getHeader(headerName));
+        }
 
         chain.doFilter(request, response);
     }

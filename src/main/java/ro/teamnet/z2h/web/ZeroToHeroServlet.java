@@ -18,8 +18,17 @@ import java.io.IOException;
 
 public class ZeroToHeroServlet extends HttpServlet {
 
+    public String handleRequest(HttpServletRequest req) {
+
+        String response = "Hello <b>" + req.getParameter("firstName") + " " +
+                req.getParameter("lastName") + "</b>! Enjoy Zero To Hero!!!";
+        return response;
+    }
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //todo
+        resp.setContentType("text/html");
+        resp.getWriter().write(handleRequest(req));
     }
 }

@@ -2,22 +2,16 @@ package ro.teamnet.z2h.domain;
 
 import java.util.Date;
 
-/**
- * Created by liviu.spiroiu on 11/3/14.
- */
 public class Employee {
 
     private Long id;
     private String firstName;
     private String lastName;
-    private Employee manager;
     private String email;
     private Date hireDate;
     private Double salary;
     private Double commissionPoints;
     private String phoneNumber;
-    private Job job;
-    private Department department;
 
     public Long getId() {
         return id;
@@ -43,36 +37,12 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public Employee getManager() {
-        return manager;
-    }
-
-    public void setManager(Employee manager) {
-        this.manager = manager;
-    }
-
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-    }
-
-    public Job getJob() {
-        return job;
-    }
-
-    public void setJob(Job job) {
-        this.job = job;
-    }
-
-    public Department getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(Department department) {
-        this.department = department;
     }
 
     public String getEmail() {

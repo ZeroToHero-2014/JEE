@@ -32,6 +32,7 @@ public class HeadersLogFilter implements Filter {
             String headerValue=((HttpServletRequest) request).getHeader(headerName);
             LogFileWriter.logHeader(headerName,headerValue);
         }
+        chain.doFilter(request, response);
     }
 
     @Override

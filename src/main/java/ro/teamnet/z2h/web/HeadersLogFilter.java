@@ -25,7 +25,7 @@ public class HeadersLogFilter implements Filter {
     }
 
     /**
-     * This filters  log request headers to file
+     * This filter  logs current request headers to filesystem
      * @param request - Client request
      * @param response - Client response
      * @param chain - Filters chain

@@ -3,7 +3,7 @@
 <h2>Enjoy Zero To Hero</h2>
 
 <div>
-    <form name="hello" method="post" action="zerotohero">
+    <form name="hello" method="post" action="hello">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName"/>
         <label for="lastName">Last Name:</label>

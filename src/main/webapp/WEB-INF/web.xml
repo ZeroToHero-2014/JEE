@@ -4,26 +4,29 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+    <filter>
+        <filter-name>logHeaders</filter-name>
+        <filter-class>ro.teamnet.z2h.web.HeadersLogFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>logHeaders</filter-name>
+        <servlet-name>HelloWorld</servlet-name>
+    </filter-mapping>
+
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
         <description>HelloWorld Servlet</description>
         <servlet-class>ro.teamnet.z2h.web.HelloWorldServlet</servlet-class>
     </servlet>
+
+
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>ZeroToHero</servlet-name>
-        <description>ZeroToHero Servlet</description>
-        <servlet-class>ro.teamnet.z2h.web.ZeroToHeroServlet</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>ZeroToHero</servlet-name>
-        <url-pattern>/zerotohero</url-pattern>
-    </servlet-mapping>
+
 
     <welcome-file-list>
         <welcome-file>/index.jsp</welcome-file>

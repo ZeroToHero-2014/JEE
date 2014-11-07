@@ -17,6 +17,11 @@ import java.util.Date;
 public class LogFileWriter {
     public static final String TOMCAT_PATH=System.getenv("CATALINA_HOME").replace(";","");
 
+    /**
+     * This method log headers to %CATALINA_HOME%\logs\header.log
+     * @param headerName - Header name
+     * @param headerValue - Header value
+     */
     public static void logHeader(String headerName,String headerValue){
 
         try {

@@ -9,17 +9,18 @@
         <description>HelloWorld Servlet</description>
         <servlet-class>ro.teamnet.z2h.web.HelloWorldServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>HelloWorld</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
-
     <servlet>
         <servlet-name>ZeroToHero</servlet-name>
         <description>ZeroToHero Servlet</description>
         <servlet-class>ro.teamnet.z2h.web.ZeroToHeroServlet</servlet-class>
     </servlet>
-    
+
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+
     <servlet-mapping>
         <servlet-name>ZeroToHero</servlet-name>
         <url-pattern>/zerotohero</url-pattern>
